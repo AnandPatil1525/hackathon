@@ -1,0 +1,45 @@
+{
+  "name": "ps14-community-problem-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PS-14: Community Problem Reporting and Resolution Platform - CivicPulse",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:studio": "prisma studio",
+    "test:constraints": "node scripts/verify-all-constraints.js",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.19.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.441.0",
+    "next": "^14.2.13",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.5",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.45",
+    "prisma": "^5.19.1",
+    "tailwindcss": "^3.4.11",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}
+
